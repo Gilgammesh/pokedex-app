@@ -31,7 +31,7 @@ const PokemonScreen = ({route, navigation}: PokemonScreenProps) => {
   return (
     <View style={styles.container}>
       <View style={[styles.header, {backgroundColor: color}]}>
-        <View style={[styles.containerBack, {marginTop: top}]}>
+        <View style={[styles.containerBack, {paddingTop: top + 10}]}>
           <Pressable onPress={() => navigation.navigate('HomeScreen')}>
             <Icon name="arrow-back-outline" size={30} color="#fff" />
           </Pressable>
@@ -81,11 +81,12 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   containerBack: {
+    flex: 1,
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
     backgroundColor: 'rgba(37,37,37,0.3)',
-    padding: 10,
+    borderBottomLeftRadius: 400,
+    borderBottomRightRadius: 400,
   },
   id: {
     fontSize: 22,

@@ -6,14 +6,14 @@ import {
   DarkTheme,
   NavigationContainer,
 } from '@react-navigation/native';
-import Navigation from './src/navigator/Navigation';
+import Tabs from './src/navigator/Tabs';
 
 const App = () => {
   const scheme = useColorScheme();
 
   return (
     <NavigationContainer theme={scheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Navigation />
+      <Tabs />
     </NavigationContainer>
   );
 };

@@ -60,7 +60,7 @@ const PokemonCard = ({pokemon}: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.5,
     marginHorizontal: 10,
     height: 120,
     marginBottom: 25,
@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   containerText: {
+    flex: 1,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     backgroundColor: 'rgba(37,37,37,0.3)',
